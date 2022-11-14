@@ -28,15 +28,6 @@ function serversecure.StringToIP(str)
 	return ((d * 256 + c) * 256 + b) * 256 + a
 end
 
-function serversecure.EnableThreadedSocket()
-	print("[ServerSecure] serversecure.EnableThreadedSocket is deprecated!")
-end
-
-function serversecure.PostInitialize()
-	print("[ServerSecure] serversecure.PostInitialize is deprecated!")
-	return true
-end
-
 hook.Add("Initialize", "serversecure.FixGameDescription", function()
 	serversecure.RefreshInfoCache()
 end)
